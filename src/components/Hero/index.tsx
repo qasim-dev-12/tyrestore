@@ -50,7 +50,7 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-2xl font-bold leading-tight text-primary sm:text-4xl sm:text-black sm:leading-tight sm:dark:text-white md:text-5xl md:leading-tight">
-                  New Car Battery Replacement Dubai
+                  Fastest On-Site Tyre Repair in Dubai
                 </h1>
               </div>
             </div>
@@ -61,8 +61,8 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-2xl rounded-3xl bg-dark px-6 py-8 ring-1 ring-stroke-dark shadow-[0_8px_40px_rgba(52,235,229,0.12)] md:px-14 md:py-14">
                 <h2 className="mb-4 text-xl font-bold leading-tight text-white sm:text-3xl">
-                  <span style={{fontSize:"16px"}} className="sm:hidden text-primary">Get Installation in 30 mins</span>
-                  <span className="hidden sm:inline">24/7 Onsite Car Battery <span className="text-primary">Replacement</span> at your Service</span>
+                  <span style={{fontSize:"16px"}} className="sm:hidden text-primary">Get Tyre Repair in 20-30 mins</span>
+                  <span className="hidden sm:inline">24/7 Onsite Tyre <span className="text-primary">Repair</span> at your Service</span>
                 </h2>
                 <ul className="mb-5 space-y-3">
                   {bullets.map((b) => (

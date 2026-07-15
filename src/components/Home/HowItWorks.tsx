@@ -10,7 +10,7 @@ const icons = [
 const steps = [
   { title: "Call or Book Online", text: "Tell us your location and vehicle details." },
   { title: "Drop Your Location", text: "Share your live location, nearest technician is dispatched." },
-  { title: "Diagnose & Install", text: "We diagnose first, then fit a genuine battery." },
+  { title: "Diagnose & Fit", text: "We inspect first, then fit or repair your tyre." },
   { title: "Drive Away", text: "Ready to go, with full warranty documentation." },
 ];
 
@@ -20,7 +20,7 @@ const HowItWorks = () => {
       <div className="container">
         <SectionTitle
           title="Back on the Road in 4 Steps"
-          paragraph="Getting a car battery replaced in Dubai has never been this simple."
+          paragraph="Getting your tyre fixed in Dubai has never been this simple."
           center
         />
         <div className="relative mx-auto max-w-lg">

@@ -6,12 +6,12 @@ const EmergencyCTA = () => {
           Emergency Service
         </span>
         <h2 className="mx-auto mb-4 max-w-[700px] text-2xl font-bold text-white sm:text-3xl">
-          Need Emergency Car Battery Replacement in Dubai?
+          Need Emergency Tyre Repair in Dubai?
         </h2>
         <p className="mx-auto mb-8 max-w-[600px] text-base text-white/70">
           Don&apos;t get stranded. Our mobile technicians are on standby 24/7
-          across Dubai with genuine Amaron, Varta, and Bosch batteries ready
-          to install at your location.
+          across Dubai with genuine tyres from top brands ready
+          to fit at your location.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a

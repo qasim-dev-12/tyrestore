@@ -4,10 +4,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HangingCTA from "@/components/Common/HangingCTA";
 import ScrollToTop from "@/components/ScrollToTop";
-import { Inter } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import "../styles/index.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const rajdhani = Rajdhani({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export default function RootLayout({
   children,
@@ -22,7 +22,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FCFCFC] dark:bg-black ${rajdhani.className}`}>
         <Providers>
           <div className="isolate">
             <Header />

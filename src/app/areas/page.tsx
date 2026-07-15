@@ -4,8 +4,8 @@ import areas from "@/data/areas";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Areas We Cover | Battery Store",
-  description: "Mobile battery replacement and roadside services across Dubai.",
+  title: "Areas We Cover | 800 Speedy",
+  description: "Mobile tyre repair and replacement services across Dubai.",
 };
 
 const AREA_PHOTOS = 8;
@@ -15,7 +15,7 @@ const AreasPage = () => {
     <>
       <Breadcrumb
         pageName="Areas We Cover"
-        description="Our mobile battery replacement units are strategically positioned across Dubai for the fastest possible response — residential communities, highways, or your office."
+        description="Our mobile tyre repair vans are strategically positioned across Dubai for the fastest possible response — residential communities, highways, or your office."
       />
       <section className="pb-16">
         <div className="container">
@@ -26,7 +26,7 @@ const AreasPage = () => {
                   <div className="relative h-36 w-full">
                     <Image
                       src={`/images/areas/dubai-${(index % AREA_PHOTOS) + 1}.jpg`}
-                      alt={`Battery Store service in ${area}, Dubai`}
+                      alt={`800 Speedy tyre service in ${area}, Dubai`}
                       fill
                       className="object-cover"
                     />

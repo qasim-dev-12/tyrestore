@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "Adeel",
     designation: "Sheikh Zayed Road, Dubai",
     content:
-      "Battery Store saved me in the middle of the night. Technician arrived in 30 minutes, professional and quick. Highly recommended!",
+      "800 Speedy saved me in the middle of the night. Technician arrived in 30 minutes, fixed my flat tyre, professional and quick. Highly recommended!",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Fatima",
     designation: "JLT, Dubai",
     content:
-      "I booked a jumpstart online, and they replaced my battery within 30 minutes. Very professional service team. Highly recommended!",
+      "I booked a puncture repair online, and they fixed my tyre within 30 minutes. Very professional service team. Highly recommended!",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Rashid",
     designation: "Sports City, Dubai",
     content:
-      "Had a flat tyre late at night. Battery Store were the only service that got back to me on the half-hour weekend. Genuinely impressed.",
+      "Had a flat tyre late at night. 800 Speedy were the only service that got back to me on the half-hour weekend. Genuinely impressed.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },

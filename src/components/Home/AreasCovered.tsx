@@ -9,7 +9,7 @@ const AreasCovered = () => {
       <div className="container">
         <SectionTitle
           title="Areas We Serve Across Dubai"
-          paragraph="No matter where you are in the city, Battery Store is ready to reach you."
+          paragraph="No matter where you are in the city, 800 Speedy is ready to reach you."
           center
         />
         <div className="-mx-4 flex flex-wrap">

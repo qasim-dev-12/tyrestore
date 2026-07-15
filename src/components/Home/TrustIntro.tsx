@@ -7,15 +7,15 @@ const TrustIntro = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <h2 className="mb-5 text-xl font-bold leading-tight text-black dark:text-white sm:text-3xl md:text-4xl">
-              Most Trusted Experts for Emergency New Car Battery Replacement
+              Most Trusted Experts for Emergency Tyre Repair
               in Dubai
             </h2>
             <p className="mb-8 text-base leading-relaxed text-body-color">
-              Whether you need an emergency car battery replacement in Dubai
-              at 3 AM or want to order an online car battery in Dubai with
-              same-day installation, Battery Store delivers a seamless
-              experience across the UAE. Over 15 years and 100,000+ batteries
-              served on time.
+              Whether you need an emergency tyre repair in Dubai
+              at 3 AM or want to order a new tyre online with
+              same-day fitting, 800 Speedy delivers a seamless
+              experience across the UAE. Trusted for fast, on-site tyre
+              service, 24/7.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

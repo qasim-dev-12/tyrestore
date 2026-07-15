@@ -4,14 +4,12 @@ import services from "@/data/services";
 
 const featured = services.filter((s) =>
   [
-    "car-battery-replacement",
-    "battery-diagnostics-jumpstart",
-    "emergency-fuel-delivery",
-    "flat-tyre-replacement",
-    "car-towing-recovery",
-    "roadside-assistance",
-    "car-recovery-dubai",
-    "alternator-dynamo-repair",
+    "tyre-repair",
+    "buy-new-tyre",
+    "tyre-replacement",
+    "air-fill",
+    "spare-tyre-change",
+    "fix-puncture-tyre",
   ].includes(s.slug),
 );
 
@@ -20,8 +18,8 @@ const ServicesGrid = () => {
     <section className="bg-gray-light dark:bg-bg-color-dark py-10 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Emergency Mobile Battery Replacement in Dubai & Roadside Services"
-          paragraph="Battery Store provides complete roadside assistance across Dubai. Our mobile units are stocked for every common emergency, not just battery replacement."
+          title="Fastest On-Site Tyre Repair & Replacement in Dubai"
+          paragraph="800 Speedy provides complete mobile tyre services across Dubai. Our vans are stocked and ready to reach you in 20-30 minutes, anywhere in the city."
           center
         />
         <div className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-4">

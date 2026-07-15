@@ -4,23 +4,23 @@ import EmergencyCTA from "@/components/Home/EmergencyCTA";
 import AreasCovered from "@/components/Home/AreasCovered";
 import Image from "next/image";
 import { BrandImage, Section, SplitContent, PrimaryButton, DotList } from "@/components/Services/ServiceSections";
-import batteryBrands from "@/data/batteryBrands";
+import tyreBrands from "@/data/tyreBrands";
 import { notFound } from "next/navigation";
 
 const PHONE = "+971543170355";
 const WHATSAPP = "https://wa.me/971543170355";
 
 export function generateStaticParams() {
-  return batteryBrands.map((brand) => ({ slug: brand.slug }));
+  return tyreBrands.map((brand) => ({ slug: brand.slug }));
 }
 
-const BatteryBrandPage = async ({
+const TyreBrandPage = async ({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) => {
   const { slug } = await params;
-  const brand = batteryBrands.find((b) => b.slug === slug);
+  const brand = tyreBrands.find((b) => b.slug === slug);
   if (!brand) return notFound();
 
   return (
@@ -44,7 +44,7 @@ const BatteryBrandPage = async ({
             <div className="w-full px-4 md:w-5/12">
               {brand.image ? (
                 <div className="relative h-[300px] w-full overflow-hidden rounded-lg shadow-one">
-                  <Image src={brand.image} alt={`${brand.title} replacement by a Battery Store technician in Dubai`} fill className="object-cover" />
+                  <Image src={brand.image} alt={`${brand.title} fitted by an 800 Speedy technician in Dubai`} fill className="object-cover" />
                 </div>
               ) : (
                 <BrandImage base="about-image" alt={brand.title} />
@@ -132,7 +132,7 @@ const BatteryBrandPage = async ({
           <SplitContent
             imageBase="about-image-2"
             imageSrc={brand.image}
-            imageAlt={brand.whyChooseUsTitle ?? "Why Choose Battery Store"}
+            imageAlt={brand.whyChooseUsTitle ?? "Why Choose 800 Speedy"}
             badge={
               <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg lg:left-0 lg:translate-x-0">
                 10+ Years Experience
@@ -140,7 +140,7 @@ const BatteryBrandPage = async ({
             }
           >
             <h2 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl">
-              {brand.whyChooseUsTitle ?? "Why Choose Battery Store?"}
+              {brand.whyChooseUsTitle ?? "Why Choose 800 Speedy?"}
             </h2>
             <p className="mb-6 text-base leading-relaxed text-body-color">{brand.whyChooseUsIntro}</p>
             <ul className="mb-6 space-y-3 border-l-2 border-primary/20 pl-5">
@@ -157,7 +157,7 @@ const BatteryBrandPage = async ({
         </Section>
       )}
 
-      {/* Signs battery needs replacement */}
+      {/* Signs tyre needs replacement */}
       {brand.signs && (
         <Section title={brand.signs.title} paragraph={brand.signs.intro}>
           <DotList items={brand.signs.list} />
@@ -165,12 +165,12 @@ const BatteryBrandPage = async ({
       )}
 
       {/* All brands — flip cards */}
-      <Section className="bg-gray-light py-10 md:py-16 dark:bg-bg-color-dark" title="All Battery Brands We Offer" paragraph="Hover a brand to see what it's known for.">
+      <Section className="bg-gray-light py-10 md:py-16 dark:bg-bg-color-dark" title="All Tyre Brands We Offer" paragraph="Hover a brand to see what it's known for.">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {batteryBrands.map((b) => (
+          {tyreBrands.map((b) => (
               <div key={b.slug} className="h-44 [perspective:1000px]">
                 <Link
-                  href={`/battery-brands/${b.slug}`}
+                  href={`/tyre-brands/${b.slug}`}
                   className="group relative block h-full w-full [transform-style:preserve-3d] transition-transform duration-500 hover:[transform:rotateY(180deg)]"
                 >
                   <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-white p-4 text-center shadow-one [backface-visibility:hidden] dark:bg-dark dark:shadow-three">
@@ -216,4 +216,4 @@ const BatteryBrandPage = async ({
   );
 };
 
-export default BatteryBrandPage;
+export default TyreBrandPage;

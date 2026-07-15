@@ -13,9 +13,9 @@ const Footer = () => {
                   <img src="/images/logo/logo-new.png" alt="800 Speedy" className="h-10 w-auto" />
                 </Link>
                 <p className="mb-4 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Battery Store is your one-stop battery shop in Dubai,
-                  specialising in on-the-spot automotive services, available
-                  24/7, 365 days a year.
+                  800 Speedy is your one-stop mobile tyre repair and
+                  replacement service in Dubai, specialising in on-the-spot
+                  automotive services, available 24/7, 365 days a year.
                 </p>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Building # 10 Sheikh Zayed Road - Dubai
@@ -102,7 +102,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Battery Store
+                  800 Speedy
                 </h2>
                 <ul>
                   <li>
@@ -148,15 +148,12 @@ const Footer = () => {
                 </h2>
                 <ul>
                   {[
-                    { slug: "car-battery-replacement", label: "Car Battery Replacement" },
-                    { slug: "battery-diagnostics-jumpstart", label: "Battery Diagnostics & Jumpstart" },
-                    { slug: "tyre-replacement", label: "Tyre Replacement" },
                     { slug: "tyre-repair", label: "Tyre Repair" },
-                    { slug: "flat-tyre-replacement", label: "Flat Tyre Replacement" },
-                    { slug: "flat-tyre-repair", label: "Flat Tyre Repair" },
-                    { slug: "roadside-assistance", label: "Roadside Assistance" },
-                    { slug: "car-towing-recovery", label: "Car Towing & Recovery" },
-                    { slug: "car-recovery-dubai", label: "Car Recovery Dubai" },
+                    { slug: "buy-new-tyre", label: "Buy New Tyre" },
+                    { slug: "tyre-replacement", label: "Tyre Replacement" },
+                    { slug: "air-fill", label: "Air Fill" },
+                    { slug: "spare-tyre-change", label: "Spare Tyre Change" },
+                    { slug: "fix-puncture-tyre", label: "Fix Puncture Tyre" },
                   ].map((s) => (
                     <li key={s.slug}>
                       <Link
@@ -174,17 +171,17 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Battery Brands
+                  Tyre Brands
                 </h2>
                 <ul>
-                  {["amaron", "bosch", "varta", "dynex", "max-gold", "max-part"].map(
+                  {["michelin", "bridgestone", "pirelli", "continental", "goodyear", "dunlop", "yokohama", "hankook", "toyo", "kumho", "nexen", "falken", "bfgoodrich", "maxxis", "cooper"].map(
                     (slug) => (
                       <li key={slug}>
                         <Link
-                          href={`/battery-brands/${slug}`}
+                          href={`/tyre-brands/${slug}`}
                           className="mb-4 inline-block text-base text-body-color capitalize duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                         >
-                          {slug.replace("-", " ")} Battery
+                          {slug} Tyres
                         </Link>
                       </li>
                     ),
@@ -197,7 +194,7 @@ const Footer = () => {
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              © {new Date().getFullYear()} 800 Speedy. All rights reserved. Genuine batteries, 24/7 doorstep delivery across the UAE.
+              © {new Date().getFullYear()} 800 Speedy. All rights reserved. Genuine tyres, 24/7 doorstep fitting across the UAE.
             </p>
           </div>
         </div>

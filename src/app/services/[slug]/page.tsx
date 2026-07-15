@@ -7,7 +7,6 @@ import BrandsShowcase from "@/components/Home/BrandsShowcase";
 import AreasCovered from "@/components/Home/AreasCovered";
 import { BrandImage, Section, SplitContent, PrimaryButton, DotList, CheckGrid, BorderList, CostFactorIcon } from "@/components/Services/ServiceSections";
 import services from "@/data/services";
-import batteryBrands from "@/data/batteryBrands";
 import { notFound } from "next/navigation";
 
 const PHONE = "+971543170355";
@@ -179,7 +178,7 @@ const ServicePage = async ({
         <Section>
           <SplitContent
             imageSrc="/images/about/jump-start-image.png"
-            imageAlt="Why Choose Battery Store"
+            imageAlt="Why Choose 800 Speedy"
             badge={
               <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg lg:left-0 lg:translate-x-0">
                 11+ Years Experience
@@ -187,7 +186,7 @@ const ServicePage = async ({
             }
           >
             <h2 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl">
-              {service.whyChooseUsTitle ?? "Why Choose Battery Store?"}
+              {service.whyChooseUsTitle ?? "Why Choose 800 Speedy?"}
             </h2>
             <p className="mb-6 text-base leading-relaxed text-body-color">{service.whyChooseUsIntro}</p>
             <ul className="mb-6 space-y-3 border-l-2 border-primary/20 pl-5">
@@ -274,27 +273,6 @@ const ServicePage = async ({
                 </Link>
               </div>
             ))}
-        </div>
-      </Section>
-
-      {/* Battery brands */}
-      <Section title="Car Batteries We Offer in Dubai" paragraph="Genuine, warrantied batteries from the brands UAE drivers trust.">
-        <div className="flex flex-wrap justify-center gap-8">
-          {batteryBrands.map((brand) => (
-            <div
-              key={brand.slug}
-              className="flex w-full flex-col rounded-lg bg-white p-6 text-center shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:bg-dark dark:shadow-three sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]"
-            >
-              <h3 className="mb-3 text-lg font-bold text-black dark:text-white">{brand.title}</h3>
-              <p className="mb-5 flex-1 text-sm text-body-color">{brand.description}</p>
-              <Link
-                href={`/battery-brands/${brand.slug}`}
-                className="inline-block rounded-xs bg-primary px-5 py-2 text-sm font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-              >
-                Read More
-              </Link>
-            </div>
-          ))}
         </div>
       </Section>
 

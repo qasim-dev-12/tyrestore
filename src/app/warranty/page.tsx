@@ -5,8 +5,8 @@ import { BrandImage, Section, SplitContent, DotList } from "@/components/Service
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Warranty | Battery Store",
-  description: "Warranty terms for batteries fitted by Battery Store.",
+  title: "Warranty | 800 Speedy",
+  description: "Warranty terms for tyres fitted by 800 Speedy.",
 };
 
 const PHONE = "+971543170355";
@@ -19,48 +19,48 @@ const warrantyLengths = [
 ];
 
 const covered = [
-  "Manufacturing defects in the battery cell or casing",
-  "Premature loss of charge under normal usage",
-  "Internal short circuits not caused by misuse",
+  "Manufacturing defects in the tyre casing or tread",
+  "Premature or uneven wear under normal usage",
+  "Sidewall or belt separation not caused by misuse",
   "One-time free replacement within the warranty period",
-  "Free battery testing and diagnostics during the claim",
+  "Free tyre and pressure inspection during the claim",
 ];
 
 const notCovered = [
-  "Physical damage, cracks, or leakage from misuse",
-  "Damage caused by an aftermarket or faulty alternator",
-  "Batteries not supplied or fitted by Battery Store",
+  "Physical damage, cuts, or punctures from road hazards",
+  "Damage caused by incorrect pressure or overloading",
+  "Tyres not supplied or fitted by 800 Speedy",
   "Claims made without proof of purchase or invoice",
-  "Normal wear and tear beyond the warranty period",
+  "Normal tread wear beyond the warranty period",
 ];
 
 const keepValidTips = [
   "Keep your original invoice or warranty card safe",
-  "Have your battery and alternator checked every 6 months",
-  "Avoid leaving lights or accessories on when the engine is off",
-  "Clean corrosion off terminals regularly",
-  "Only get repairs done by authorized Battery Store technicians",
+  "Check tyre pressure and tread depth every month",
+  "Avoid overloading your vehicle beyond its rated capacity",
+  "Get wheel alignment and balancing checked regularly",
+  "Only get repairs done by authorized 800 Speedy technicians",
 ];
 
 const claimSteps = [
   "Call or WhatsApp us with your invoice details and issue",
-  "Our technician inspects the battery at your location",
+  "Our technician inspects the tyre at your location",
   "If covered, we replace it on the spot — no waiting",
-  "Receive an updated warranty card for the new battery",
+  "Receive an updated warranty card for the new tyre",
 ];
 
 const testimonials = [
-  { name: "Adel", area: "Al Barsha", quote: "Battery failed within a year and Battery Store replaced it free of charge in 20 minutes, no questions asked." },
-  { name: "Nadia", area: "Mirdif", quote: "Warranty claim was simple — just showed my invoice and the technician swapped the battery on-site." },
+  { name: "Adel", area: "Al Barsha", quote: "Tyre developed a sidewall issue within months and 800 Speedy replaced it free of charge in 20 minutes, no questions asked." },
+  { name: "Nadia", area: "Mirdif", quote: "Warranty claim was simple — just showed my invoice and the technician swapped the tyre on-site." },
   { name: "Salem", area: "Deira", quote: "Honest about what was covered and what wasn't. Appreciated the clear explanation." },
 ];
 
 const faqs = [
-  { q: "How long is the warranty on my battery?", a: "Depending on the brand, batteries come with 3, 6, or 12 months warranty plus a one-time free replacement." },
-  { q: "What do I need to make a warranty claim?", a: "Your original invoice or warranty card and the faulty battery for inspection." },
-  { q: "Is the warranty valid if I move cities within the UAE?", a: "Yes, as long as it's a battery we supplied and fitted, our warranty is valid across the UAE." },
-  { q: "Does the warranty cover damage from an accident?", a: "No, physical damage from accidents or misuse is not covered under warranty." },
-  { q: "How quickly can a warranty replacement be done?", a: "Most warranty replacements are completed on-site within 30-45 minutes of our technician arriving." },
+  { q: "How long is the warranty on my tyre?", a: "Depending on the brand, tyres come with 3, 6, or 12 months warranty plus a one-time free replacement." },
+  { q: "What do I need to make a warranty claim?", a: "Your original invoice or warranty card and the faulty tyre for inspection." },
+  { q: "Is the warranty valid if I move cities within the UAE?", a: "Yes, as long as it's a tyre we supplied and fitted, our warranty is valid across the UAE." },
+  { q: "Does the warranty cover damage from a puncture or accident?", a: "No, physical damage from road hazards, accidents, or misuse is not covered under warranty." },
+  { q: "How quickly can a warranty replacement be done?", a: "Most warranty replacements are completed on-site within 20-30 minutes of our technician arriving." },
 ];
 
 const WarrantyPage = () => {
@@ -73,13 +73,13 @@ const WarrantyPage = () => {
             <div className="w-full px-4 md:w-7/12">
               <div className="mb-8 max-w-[570px] md:mb-0">
                 <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  Battery Warranty – Battery Store Dubai
+                  Tyre Warranty – 800 Speedy Dubai
                 </h1>
                 <p className="mb-4 text-base font-medium leading-relaxed text-body-color">
-                  All batteries provided by Battery Store come with 3, 6, or 12 months warranty with a one-time free replacement, depending on the battery brand you choose.
+                  All tyres provided by 800 Speedy come with 3, 6, or 12 months warranty with a one-time free replacement, depending on the tyre brand you choose.
                 </p>
                 <p className="mb-4 text-base font-medium leading-relaxed text-body-color">
-                  We stand behind every battery we fit — genuine products, transparent terms, and fast on-site replacement if anything goes wrong.
+                  We stand behind every tyre we fit — genuine products, transparent terms, and fast on-site replacement if anything goes wrong.
                 </p>
                 <div className="flex flex-wrap items-center gap-4">
                   <a href={`tel:${PHONE}`} className="rounded-xs bg-primary px-6 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80">
@@ -92,7 +92,7 @@ const WarrantyPage = () => {
               </div>
             </div>
             <div className="w-full px-4 md:w-5/12">
-              <BrandImage base="about-image" alt="Battery Warranty" />
+              <BrandImage base="about-image" alt="Tyre Warranty" />
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ const WarrantyPage = () => {
       <Section title="How to Keep Your Warranty Valid" mb="40px">
         <SplitContent imageBase="about-image" imageAlt="How to keep your warranty valid">
           <p className="mb-4 text-base leading-relaxed text-body-color">
-            Your warranty stays valid as long as the battery is used and maintained correctly. A few simple habits go a long way toward avoiding a denied claim:
+            Your warranty stays valid as long as the tyre is used and maintained correctly. A few simple habits go a long way toward avoiding a denied claim:
           </p>
           <DotList items={keepValidTips} />
         </SplitContent>
