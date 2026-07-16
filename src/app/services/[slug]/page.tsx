@@ -177,7 +177,7 @@ const ServicePage = async ({
       {service.whyChooseUs && (
         <Section>
           <SplitContent
-            imageSrc="/images/about/jump-start-image.png"
+            imageSrc="/tyres/why-choose.png"
             imageAlt="Why Choose 800 Speedy"
             badge={
               <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg lg:left-0 lg:translate-x-0">
@@ -198,7 +198,7 @@ const ServicePage = async ({
               ))}
             </ul>
             <p className="mb-6 text-base font-medium text-body-color">{service.whyChooseUsClosing}</p>
-            <PrimaryButton href={`tel:${PHONE}`}>DISCOVER MORE</PrimaryButton>
+            <PrimaryButton href={`tel:${PHONE}`}>Call Now</PrimaryButton>
           </SplitContent>
         </Section>
       )}
@@ -247,7 +247,7 @@ const ServicePage = async ({
             {service.whyPartner.closing && (
               <p className="mb-6 text-base font-medium text-body-color">{service.whyPartner.closing}</p>
             )}
-            <PrimaryButton href={`tel:${PHONE}`}>DISCOVER MORE</PrimaryButton>
+            <PrimaryButton href={`tel:${PHONE}`}>Call Now</PrimaryButton>
           </SplitContent>
         </Section>
       )}
@@ -307,7 +307,7 @@ const ServicePage = async ({
       ) : (
         service.costFactors && (
           <Section className="bg-gray-light py-10 md:py-16 dark:bg-bg-color-dark">
-            <SplitContent imageBase="about-image-2" imageAlt="What Affects the Price">
+            <SplitContent imageSrc="/tyres/price-effect.png" imageAlt="What Affects the Price">
               <SectionTitle title="What Affects the Price" paragraph="Pricing isn't one-size-fits-all. A few key factors influence what you'll pay." mb="30px" />
               <div className="space-y-3">
                 {service.costFactors.map((factor, index) => (
@@ -328,7 +328,7 @@ const ServicePage = async ({
       {/* Pricing intro band */}
       {service.pricingIntro && (
         <Section>
-          <SplitContent imageBase="about-image-2" imageAlt={service.pricingIntro.title} imageSide="right">
+          <SplitContent imageSrc="/tyres/price-effect-2.png" imageAlt={service.pricingIntro.title} imageSide="right">
             <h2 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl">
               {service.pricingIntro.title}
             </h2>

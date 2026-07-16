@@ -152,7 +152,7 @@ const TyreBrandPage = async ({
               ))}
             </ul>
             <p className="mb-6 text-base font-medium text-body-color">{brand.whyChooseUsClosing}</p>
-            <PrimaryButton href={`tel:${PHONE}`}>DISCOVER MORE</PrimaryButton>
+            <PrimaryButton href={`tel:${PHONE}`}>Call Now</PrimaryButton>
           </SplitContent>
         </Section>
       )}

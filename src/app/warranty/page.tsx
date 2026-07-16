@@ -1,7 +1,8 @@
+import Image from "next/image";
 import FAQAccordion from "@/components/Common/FAQAccordion";
 import EmergencyCTA from "@/components/Home/EmergencyCTA";
 import AreasCovered from "@/components/Home/AreasCovered";
-import { BrandImage, Section, SplitContent, DotList } from "@/components/Services/ServiceSections";
+import { Section, SplitContent, DotList } from "@/components/Services/ServiceSections";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,11 +13,7 @@ export const metadata: Metadata = {
 const PHONE = "+971543170355";
 const WHATSAPP = "https://wa.me/971543170355";
 
-const warrantyLengths = [
-  { value: "3", label: "Months Warranty" },
-  { value: "6", label: "Months Warranty" },
-  { value: "12", label: "Months Warranty" },
-];
+const warrantyLengths = [{ value: "2", label: "Months Warranty on Every New Tyre" }];
 
 const covered = [
   "Manufacturing defects in the tyre casing or tread",
@@ -56,7 +53,7 @@ const testimonials = [
 ];
 
 const faqs = [
-  { q: "How long is the warranty on my tyre?", a: "Depending on the brand, tyres come with 3, 6, or 12 months warranty plus a one-time free replacement." },
+  { q: "How long is the warranty on my tyre?", a: "Every new tyre comes with a 2-month warranty plus a one-time free replacement." },
   { q: "What do I need to make a warranty claim?", a: "Your original invoice or warranty card and the faulty tyre for inspection." },
   { q: "Is the warranty valid if I move cities within the UAE?", a: "Yes, as long as it's a tyre we supplied and fitted, our warranty is valid across the UAE." },
   { q: "Does the warranty cover damage from a puncture or accident?", a: "No, physical damage from road hazards, accidents, or misuse is not covered under warranty." },
@@ -76,7 +73,7 @@ const WarrantyPage = () => {
                   Tyre Warranty – 800 Speedy Dubai
                 </h1>
                 <p className="mb-4 text-base font-medium leading-relaxed text-body-color">
-                  All tyres provided by 800 Speedy come with 3, 6, or 12 months warranty with a one-time free replacement, depending on the tyre brand you choose.
+                  All tyres provided by 800 Speedy come with a 2-month warranty and a one-time free replacement.
                 </p>
                 <p className="mb-4 text-base font-medium leading-relaxed text-body-color">
                   We stand behind every tyre we fit — genuine products, transparent terms, and fast on-site replacement if anything goes wrong.
@@ -92,7 +89,9 @@ const WarrantyPage = () => {
               </div>
             </div>
             <div className="w-full px-4 md:w-5/12">
-              <BrandImage base="about-image" alt="Tyre Warranty" />
+              <div className="relative mx-auto h-[320px] w-full max-w-[500px] overflow-hidden rounded-2xl">
+                <Image src="/tyres/warranty-page.png" alt="Tyre Warranty" fill className="object-cover" />
+              </div>
             </div>
           </div>
         </div>
@@ -100,7 +99,7 @@ const WarrantyPage = () => {
 
       {/* Warranty length cards */}
       <Section className="pt-10 md:pt-16 pb-8">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div className="mx-auto max-w-[360px]">
           {warrantyLengths.map((w) => (
             <div key={`${w.value}-${w.label}`} className="rounded-lg bg-primary/5 px-4 py-6 text-center dark:bg-white/5">
               <p className="mb-1 text-3xl font-bold text-primary">{w.value}</p>
@@ -126,7 +125,7 @@ const WarrantyPage = () => {
 
       {/* How to keep your warranty valid */}
       <Section title="How to Keep Your Warranty Valid" mb="40px">
-        <SplitContent imageBase="about-image" imageAlt="How to keep your warranty valid">
+        <SplitContent imageSrc="/tyres/warranty-3.png" imageAlt="How to keep your warranty valid">
           <p className="mb-4 text-base leading-relaxed text-body-color">
             Your warranty stays valid as long as the tyre is used and maintained correctly. A few simple habits go a long way toward avoiding a denied claim:
           </p>
@@ -136,7 +135,7 @@ const WarrantyPage = () => {
 
       {/* Making a warranty claim */}
       <Section className="bg-gray-light py-10 md:py-16 dark:bg-bg-color-dark" title="Making a Warranty Claim — Simple Steps" mb="40px">
-        <SplitContent imageBase="about-image-2" imageAlt="Making a warranty claim" imageSide="right">
+        <SplitContent imageSrc="/tyres/warranty-steps.png" imageAlt="Making a warranty claim" imageSide="right">
           <div className="space-y-3">
             {claimSteps.map((step, index) => (
               <div key={step} className="flex items-center gap-4 rounded-lg bg-white px-5 py-4 text-base text-body-color shadow-one dark:bg-dark dark:shadow-three">

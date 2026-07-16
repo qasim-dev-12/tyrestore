@@ -41,7 +41,7 @@ const Header = () => {
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky fixed z-9999 bg-white/80 backdrop-blur-xs transition"
+            ? "bg-gray-dark/95 shadow-sticky-dark fixed z-9999 backdrop-blur-xs transition"
             : "absolute bg-transparent"
         }`}
       >
@@ -97,8 +97,8 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                ? "text-primary"
+                                : "text-dark hover:text-primary xl:text-white"
                             }`}
                           >
                             {menuItem.title}
@@ -107,7 +107,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base whitespace-nowrap xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 dark:text-white/70 dark:group-hover:text-white"
+                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base whitespace-nowrap xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 xl:text-white"
                             >
                               {menuItem.title}
                               <span className="pl-3">

@@ -35,7 +35,7 @@ export type Service = {
 const services: Service[] = [
   {
     slug: "tyre-replacement",
-    heroImage: "/images/about/tyre replacement.png",
+    heroImage: "/tyres/tyre-solution.png",
     title: "Tyre Replacement Dubai – We Reach You in 30-45 Minutes",
     description:
       "On-site tyre replacement with a wide range of tyre brands and sizes, fitted at your location.",
@@ -130,7 +130,7 @@ const services: Service[] = [
   },
   {
     slug: "tyre-repair",
-    heroImage: "/images/about/tyre-repair.png",
+    heroImage: "/tyres/repair-tyre.png",
     title: "Tyre Repair Dubai – On-Site in 30-45 Minutes",
     description:
       "Professional tyre puncture repair to get you safely back on the road without a full replacement.",
@@ -227,7 +227,7 @@ const services: Service[] = [
   },
   {
     slug: "flat-tyre-replacement",
-    heroImage: "/images/about/flat-tyre-rep.png",
+    heroImage: "/tyres/tyre-solution.png",
     title: "Flat Tyre Change Service in Dubai – starts from AED 99, in just 30 minutes",
     description:
       "Quick flat tyre replacement service that gets you back on the road safely with minimal downtime.",
@@ -323,7 +323,7 @@ const services: Service[] = [
   },
   {
     slug: "flat-tyre-repair",
-    heroImage: "/images/about/flat-tyre-rep-1.png",
+    heroImage: "/tyres/repair-tyre.png",
     title: "Flat Tyre Repair Dubai – 800 Speedy Comes to You 24/7",
     description:
       "On-the-spot flat tyre patching and repair so you can avoid a costly replacement when possible.",
@@ -739,7 +739,7 @@ const services: Service[] = [
   },
   {
     slug: "buy-new-tyre",
-    heroImage: "/images/about/tyre replacement.png",
+    heroImage: "/tyres/buy-new-tyre.png",
     title: "Buy New Tyre Dubai – Delivered & Fitted in 20-30 Minutes",
     description:
       "Order brand-new tyres online and get them delivered and fitted at your location, starting from AED 79.",
@@ -801,7 +801,7 @@ const services: Service[] = [
   },
   {
     slug: "air-fill",
-    heroImage: "/images/about/tyre-repair.png",
+    heroImage: "/tyres/tyre-air-fill.png",
     title: "Tyre Air Fill Dubai – On-Site in 20-30 Minutes",
     description:
       "Quick, accurate tyre air top-up and pressure check at your location, starting from AED 79.",
@@ -856,7 +856,7 @@ const services: Service[] = [
   },
   {
     slug: "spare-tyre-change",
-    heroImage: "/images/about/tyre replacement.png",
+    heroImage: "/tyres/spare-tyre-change.png",
     title: "Spare Tyre Change Dubai – On-Site in 20-30 Minutes",
     description:
       "Fast spare tyre fitting to get you safely back on the road, starting from AED 79.",
@@ -912,7 +912,7 @@ const services: Service[] = [
   },
   {
     slug: "fix-puncture-tyre",
-    heroImage: "/images/about/tyre-repair.png",
+    heroImage: "/tyres/fix-puncture-tyre.png",
     title: "Fix Puncture Tyre Dubai – On-Site in 20-30 Minutes",
     description:
       "Quick puncture repair to get you safely back on the road without a full replacement, starting from AED 79.",

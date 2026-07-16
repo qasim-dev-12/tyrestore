@@ -60,7 +60,7 @@ const signs = {
 const tyreBrands: TyreBrand[] = [
   {
     slug: "michelin",
-    image: "/images/battery-brands/amaron.png",
+    image: "/tyres/michellin1.png",
     title: "Michelin Tyres",
     description: "Michelin tyres deliver long tread life and strong wet-grip performance trusted by drivers across the UAE.",
     intro:
@@ -88,7 +88,7 @@ const tyreBrands: TyreBrand[] = [
     faqs: [
       { q: "Are your Michelin tyres genuine?", a: "Yes, 100% genuine Michelin tyres with full manufacturer warranty." },
       { q: "How long does fitting take?", a: "Most replacements take under 20 minutes once the technician arrives." },
-      { q: "Do you offer warranty on Michelin tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Michelin tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Michelin tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models in the UAE." },
       { q: "Do you offer doorstep delivery for Michelin tyres?", a: "Yes, we deliver and fit at your home, office, or roadside location, 24/7." },
       { q: "What happens to my old tyre?", a: "We collect and dispose of it according to UAE environmental standards, free of charge." },
@@ -97,7 +97,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "bridgestone",
-    image: "/images/battery-brands/bosch.jpg",
+    image: "/tyres/bridgestone1.png",
     title: "Bridgestone Tyres",
     description: "Bridgestone tyres combine Japanese engineering with durable compounds for reliable rides in any weather.",
     intro:
@@ -125,7 +125,7 @@ const tyreBrands: TyreBrand[] = [
     faqs: [
       { q: "Are your Bridgestone tyres genuine?", a: "Yes, 100% genuine Bridgestone tyres with full manufacturer warranty." },
       { q: "Why choose Bridgestone over other brands?", a: "Bridgestone tyres offer durable compounds and reliable performance in extreme heat." },
-      { q: "Do you offer warranty on Bridgestone tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Bridgestone tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Bridgestone tyre for luxury cars?", a: "Yes, we stock sizes for sedans, SUVs, and most luxury models." },
       { q: "Do you deliver Bridgestone tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
       { q: "What happens to my old tyre?", a: "We collect and dispose of it free of charge per UAE environmental standards." },
@@ -134,7 +134,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "continental",
-    image: "/images/battery-brands/varta.jpg",
+    image: "/tyres/continental.png",
     title: "Continental Tyres",
     description: "Continental tyres offer premium handling and braking performance for vehicles with high road demands.",
     intro:
@@ -162,7 +162,7 @@ const tyreBrands: TyreBrand[] = [
     faqs: [
       { q: "Are your Continental tyres genuine?", a: "Yes, 100% genuine Continental tyres with full warranty." },
       { q: "Is Continental suitable for performance vehicles?", a: "Yes, Continental tyres are designed for precise handling and high road demands." },
-      { q: "Do you offer warranty on Continental tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Continental tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Continental tyre for any car model?", a: "Yes, including performance and SUV models." },
       { q: "Do you deliver Continental tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
       { q: "What happens to my old tyre?", a: "We collect and dispose of it free of charge per UAE environmental standards." },
@@ -171,7 +171,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "goodyear",
-    image: "/images/battery-brands/dynex.jpg",
+    image: "/tyres/goodyear.png",
     title: "Goodyear Tyres",
     description: "Goodyear tyres provide dependable everyday performance at a competitive price point.",
     intro:
@@ -199,7 +199,7 @@ const tyreBrands: TyreBrand[] = [
     faqs: [
       { q: "Are your Goodyear tyres genuine?", a: "Yes, 100% genuine Goodyear tyres with full manufacturer warranty." },
       { q: "Is Goodyear a budget option?", a: "Yes, Goodyear offers dependable performance at a more competitive price point." },
-      { q: "Do you offer warranty on Goodyear tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Goodyear tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Goodyear tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "Do you deliver Goodyear tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
       { q: "What happens to my old tyre?", a: "We collect and dispose of it free of charge per UAE environmental standards." },
@@ -208,7 +208,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "pirelli",
-    image: "/images/battery-brands/max-gold.jpg",
+    image: "/tyres/pirelli.png",
     title: "Pirelli Tyres",
     description: "Pirelli tyres are built for sporty handling and consistent performance in extreme temperatures.",
     intro:
@@ -236,7 +236,7 @@ const tyreBrands: TyreBrand[] = [
     faqs: [
       { q: "Are your Pirelli tyres genuine?", a: "Yes, 100% genuine Pirelli tyres with full manufacturer warranty." },
       { q: "Is Pirelli good for hot climates?", a: "Yes, it's built specifically for durability and performance in extreme temperatures." },
-      { q: "Do you offer warranty on Pirelli tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Pirelli tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Pirelli tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "Do you deliver Pirelli tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
       { q: "What happens to my old tyre?", a: "We collect and dispose of it free of charge per UAE environmental standards." },
@@ -245,7 +245,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "yokohama",
-    image: "/images/battery-brands/max-part.jpg",
+    image: "/tyres/yokohama.png",
     title: "Yokohama Tyres",
     description: "Yokohama tyres deliver reliable everyday grip backed by a full manufacturer warranty.",
     intro:
@@ -272,7 +272,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Yokohama tyres genuine?", a: "Yes, 100% genuine Yokohama tyres with full manufacturer warranty." },
-      { q: "Do you offer warranty on Yokohama tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Yokohama tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Yokohama tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Yokohama tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -282,6 +282,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "dunlop",
+    image: "/tyres/dunloop.png",
     title: "Dunlop Tyres",
     description: "Dunlop tyres offer balanced handling and braking performance for everyday and sporty driving.",
     intro:
@@ -308,7 +309,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Dunlop tyres genuine?", a: "Yes, 100% genuine Dunlop tyres with full manufacturer warranty." },
-      { q: "Do you offer warranty on Dunlop tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Dunlop tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Dunlop tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Dunlop tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -318,6 +319,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "hankook",
+    image: "/tyres/hankook.png",
     title: "Hankook Tyres",
     description: "Hankook tyres deliver quiet, comfortable rides with strong value for money across the UAE.",
     intro:
@@ -344,7 +346,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Hankook tyres genuine?", a: "Yes, 100% genuine Hankook tyres with full manufacturer warranty." },
-      { q: "Do you offer warranty on Hankook tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Hankook tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Hankook tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Hankook tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -354,6 +356,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "toyo",
+    image: "/tyres/toyo.png",
     title: "Toyo Tires",
     description: "Toyo Tires provide durable tread compounds built to handle Dubai's heat and road conditions.",
     intro:
@@ -380,7 +383,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Toyo Tires genuine?", a: "Yes, 100% genuine Toyo Tires with full manufacturer warranty." },
-      { q: "Do you offer warranty on Toyo Tires?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Toyo Tires?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Toyo tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Toyo Tires to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -390,6 +393,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "kumho",
+    image: "/tyres/kumho.png",
     title: "Kumho Tyres",
     description: "Kumho tyres balance comfort and performance at a competitive price point.",
     intro:
@@ -416,7 +420,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Kumho tyres genuine?", a: "Yes, 100% genuine Kumho tyres with full manufacturer warranty." },
-      { q: "Do you offer warranty on Kumho tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Kumho tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Kumho tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Kumho tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -426,6 +430,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "nexen",
+    image: "/tyres/nexen.png",
     title: "Nexen Tyres",
     description: "Nexen tyres offer dependable everyday performance backed by full manufacturer warranty.",
     intro:
@@ -452,7 +457,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Nexen tyres genuine?", a: "Yes, 100% genuine Nexen tyres with full manufacturer warranty." },
-      { q: "Do you offer warranty on Nexen tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Nexen tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Nexen tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Nexen tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -462,6 +467,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "falken",
+    image: "/tyres/falken.png",
     title: "Falken Tyres",
     description: "Falken tyres are built for sporty, responsive handling at a mid-range price point.",
     intro:
@@ -488,7 +494,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Falken tyres genuine?", a: "Yes, 100% genuine Falken tyres with full manufacturer warranty." },
-      { q: "Do you offer warranty on Falken tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Falken tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Falken tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Falken tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -498,6 +504,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "bfgoodrich",
+    image: "/tyres/bfgoodrich.png",
     title: "BFGoodrich Tyres",
     description: "BFGoodrich tyres are built tough for on- and off-road performance across the UAE.",
     intro:
@@ -525,7 +532,7 @@ const tyreBrands: TyreBrand[] = [
     faqs: [
       { q: "Are your BFGoodrich tyres genuine?", a: "Yes, 100% genuine BFGoodrich tyres with full manufacturer warranty." },
       { q: "Are BFGoodrich tyres good off-road?", a: "Yes, they're built for both on-road comfort and off-road capability." },
-      { q: "Do you offer warranty on BFGoodrich tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on BFGoodrich tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a BFGoodrich tyre for any car model?", a: "Yes, especially SUVs and 4x4s." },
       { q: "Do you deliver BFGoodrich tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
       { q: "What happens to my old tyre?", a: "We collect and dispose of it free of charge per UAE environmental standards." },
@@ -534,6 +541,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "maxxis",
+    image: "/tyres/maxxis.png",
     title: "Maxxis Tyres",
     description: "Maxxis tyres deliver reliable performance and value for daily drivers across the UAE.",
     intro:
@@ -560,7 +568,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Maxxis tyres genuine?", a: "Yes, 100% genuine Maxxis tyres with full manufacturer warranty." },
-      { q: "Do you offer warranty on Maxxis tyres?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Maxxis tyres?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Maxxis tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Maxxis tyres to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },
@@ -570,6 +578,7 @@ const tyreBrands: TyreBrand[] = [
   },
   {
     slug: "cooper",
+    image: "/tyres/cooper.png",
     title: "Cooper Tires",
     description: "Cooper Tires combine comfort and durability, trusted by drivers across the UAE.",
     intro:
@@ -596,7 +605,7 @@ const tyreBrands: TyreBrand[] = [
     ],
     faqs: [
       { q: "Are your Cooper Tires genuine?", a: "Yes, 100% genuine Cooper Tires with full manufacturer warranty." },
-      { q: "Do you offer warranty on Cooper Tires?", a: "Yes, warranty terms depend on the model." },
+      { q: "Do you offer warranty on Cooper Tires?", a: "Yes, every new tyre comes with a 2-month warranty from 800 Speedy." },
       { q: "Can you fit a Cooper tyre for any car model?", a: "Yes, we stock sizes for sedans, SUVs, and most popular models." },
       { q: "How fast is fitting?", a: "Most replacements take under 20 minutes once the technician arrives." },
       { q: "Do you deliver Cooper Tires to my home or office?", a: "Yes, we deliver and fit at your location, 24/7, anywhere in Dubai." },

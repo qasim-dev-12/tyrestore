@@ -1,6 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
 import areas from "@/data/areas";
+import { slugify } from "@/lib/areaSlug";
+
+const PHONE = "+971543170355";
+const AREA_PHOTOS = 8;
 
 const AreasCovered = () => {
   const preview = areas.slice(0, 12);
@@ -14,23 +19,34 @@ const AreasCovered = () => {
         />
         <div className="-mx-4 flex flex-wrap">
           {preview.map((area, index) => (
-            <div key={area} className="w-1/2 px-4 py-2 sm:w-1/3 md:w-1/4">
-              <span
-                style={{ animationDelay: `${(index % 6) * 0.15}s` }}
-                className="inline-block w-full animate-[float_3s_ease-in-out_infinite] rounded-lg bg-white px-4 py-3 text-center text-base font-medium text-body-color shadow-one transition-all duration-300 hover:-translate-y-1 hover:text-primary hover:shadow-lg dark:bg-dark dark:shadow-three"
+            <div key={area} className="mb-6 w-1/2 px-4 sm:w-1/3 md:w-1/4">
+              <Link
+                href={`/areas/${slugify(area)}`}
+                className="block overflow-hidden rounded-lg bg-white shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:bg-dark dark:shadow-three"
               >
-                {area}
-              </span>
+                <div className="relative h-36 w-full">
+                  <Image
+                    src={`/images/areas/dubai-${(index % AREA_PHOTOS) + 1}.jpg`}
+                    alt={`800 Speedy tyre service in ${area}, Dubai`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <p className="px-4 py-3 text-center text-base font-medium text-black dark:text-white">
+                  {area}
+                </p>
+              </Link>
             </div>
           ))}
         </div>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <Link
-            href="/areas"
-            className="custom-btn wobble-btn bg-primary tracking-wide duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-primary/80"
+          <a
+            href={`tel:${PHONE}`}
+            className="custom-btn call-btn wobble-btn"
           >
-            DISCOVER MORE
-          </Link>
+            <svg className="btn-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call Now
+          </a>
           <a
             href="https://wa.me/971543170355"
             target="_blank"

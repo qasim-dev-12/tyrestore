@@ -1,4 +1,4 @@
-import Link from "next/link";
+const PHONE = "+971543170355";
 
 const TrustIntro = () => {
   return (
@@ -18,12 +18,13 @@ const TrustIntro = () => {
               service, 24/7.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="custom-btn wobble-btn bg-primary duration-300 ease-in-out hover:bg-primary/80"
+              <a
+                href={`tel:${PHONE}`}
+                className="custom-btn call-btn wobble-btn"
               >
-                Discover More
-              </Link>
+                <svg className="btn-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                Call Now
+              </a>
               <a
                 href="https://wa.me/971543170355"
                 target="_blank"

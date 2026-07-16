@@ -14,8 +14,8 @@ const bullets = [
   {
     bg: "bg-green-600",
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
-    text: "Unlock Up to 24 Months of Free Warranty",
-    short: "Up to 24 Months Warranty",
+    text: "2-Month Free Warranty on Every New Tyre",
+    short: "2-Month Free Warranty",
   },
   {
     bg: "bg-orange-500",

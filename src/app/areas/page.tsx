@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import areas from "@/data/areas";
+import { slugify } from "@/lib/areaSlug";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,7 +24,10 @@ const AreasPage = () => {
           <div className="-mx-4 flex flex-wrap">
             {areas.map((area, index) => (
               <div key={area} className="mb-6 w-full px-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
-                <div className="overflow-hidden rounded-lg bg-white shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:bg-dark dark:shadow-three">
+                <Link
+                  href={`/areas/${slugify(area)}`}
+                  className="block overflow-hidden rounded-lg bg-white shadow-one transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:bg-dark dark:shadow-three"
+                >
                   <div className="relative h-36 w-full">
                     <Image
                       src={`/images/areas/dubai-${(index % AREA_PHOTOS) + 1}.jpg`}
@@ -34,7 +39,7 @@ const AreasPage = () => {
                   <p className="px-4 py-3 text-center text-base font-medium text-black dark:text-white">
                     {area}
                   </p>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
