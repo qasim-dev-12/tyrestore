@@ -1,39 +1,39 @@
 const bullets = [
   {
-    bg: "bg-white ring-1 ring-black/10",
-    icon: <img src="/images/logo/logo50.png" alt="800 Speedy" className="h-6 w-6 object-contain sm:h-7 sm:w-7" />,
-    text: "Emergency? Get 24/7 Roadside Help Now!",
-    short: "24/7 Emergency Help",
+    bg: "bg-orange-500",
+    icon: <span className="text-lg">🚗</span>,
+    text: "Fast spare tyre changes",
+    short: "Fast spare tyre changes",
   },
   {
-    bg: "bg-blue-500",
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>,
-    text: "Shop Now, Pay Later with Tabby or Tamara",
-    short: "Pay Later: Tabby or Tamara",
+    bg: "bg-white ring-1 ring-black/10",
+    icon: <span className="text-lg">🛠️</span>,
+    text: "Quick puncture fixes",
+    short: "Quick puncture fixes",
   },
   {
     bg: "bg-green-600",
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
-    text: "2-Month Free Warranty on Every New Tyre",
-    short: "2-Month Free Warranty",
-  },
-  {
-    bg: "bg-orange-500",
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>,
-    text: "Free Delivery & Installation",
-    short: "Free Delivery & Installation",
+    icon: <span className="text-lg">⚡</span>,
+    text: "Reliable flat tyre repairs",
+    short: "Reliable flat tyre repairs",
   },
   {
     bg: "bg-yellow-600",
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>,
-    text: "500+ Google Reviews — Trusted in Dubai",
-    short: "500+ Google Reviews",
+    icon: <span className="text-lg">🛞</span>,
+    text: "Brand-new tyres at great prices",
+    short: "Brand-new tyres, great prices",
+  },
+  {
+    bg: "bg-blue-500",
+    icon: <span className="text-lg">💳</span>,
+    text: "Pay by card or pay by link",
+    short: "Pay by card or link",
   },
   {
     bg: "bg-purple-600",
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>,
-    text: "Available in Dubai, Sharjah, Abu Dhabi & Ajman",
-    short: "Dubai, Sharjah & Abu Dhabi",
+    icon: <span className="text-lg">💰</span>,
+    text: "Services start from AED 79",
+    short: "Services from AED 79",
   },
 ];
 
@@ -50,7 +50,7 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-2xl font-bold leading-tight text-primary sm:text-4xl sm:text-black sm:leading-tight sm:dark:text-white md:text-5xl md:leading-tight">
-                  Fastest On-Site Tyre Repair in Dubai
+                  Fastest On-Site Tyre Repair in Dubai— Arriving in Just 20–30 Minutes
                 </h1>
               </div>
             </div>
