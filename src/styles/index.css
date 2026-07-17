@@ -265,7 +265,7 @@ layer(base);
     text-align: center;
     padding: 9px 4px;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 17px;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -275,8 +275,8 @@ layer(base);
   }
 
   .button-wrapper .btn-icon {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
   }
 
   body {

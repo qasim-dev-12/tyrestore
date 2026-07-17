@@ -64,7 +64,7 @@ const Hero = () => {
                   <span style={{fontSize:"16px"}} className="sm:hidden text-primary">Get Tyre Repair in 20-30 mins</span>
                   <span className="hidden sm:inline">24/7 Onsite Tyre <span className="text-primary">Repair</span> at your Service</span>
                 </h2>
-                <ul className="mb-5 space-y-3">
+                <ul className="mb-5 space-y-3 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-4 sm:space-y-0">
                   {bullets.map((b) => (
                     <li key={b.text} className="flex items-center gap-3 text-base font-medium text-white">
                       <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full sm:h-10 sm:w-10 ${b.bg}`}>
@@ -75,7 +75,7 @@ const Hero = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="hidden sm:flex flex-wrap justify-center gap-4">
+                <div className="hidden sm:flex flex-wrap justify-center gap-4 mt-16">
                   <a
                     href="https://wa.me/971543170355"
                     target="_blank"
