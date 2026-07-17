@@ -34,6 +34,30 @@ export default function RootLayout({
             gtag('config', 'AW-18223576133');
           `}
         </Script>
+        <Script id="tel-click-conversion" strategy="afterInteractive">
+          {`
+            (function(){
+                document.addEventListener('click', function(e){
+                if(e.target.closest('a[href^="tel:"]')){
+                    gtag('event', 'conversion', {'send_to': 'AW-18223576133/xuRYCLjQg9IcEMXo1vFD'});
+                    CG.conversion();
+                    initCCConvertion();
+                }
+                });
+            })();
+          `}
+        </Script>
+        <Script id="whatsapp-click-conversion" strategy="afterInteractive">
+          {`
+            document.addEventListener('click', function(e){
+              if(e.target.closest('a[href^="https://wa.me/"]')){
+                gtag('event', 'conversion', {'send_to': 'AW-18223576133/IABYCPi-idIcEMXo1vFD'});
+                CG.conversion();
+                initCCConvertion();
+              }
+            });
+          `}
+        </Script>
       </head>
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${rajdhani.className}`}>
