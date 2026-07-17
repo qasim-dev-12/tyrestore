@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import HangingCTA from "@/components/Common/HangingCTA";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Rajdhani } from "next/font/google";
+import Script from "next/script";
 import "../styles/index.css";
 
 const rajdhani = Rajdhani({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
@@ -20,7 +21,20 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18223576133"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18223576133');
+          `}
+        </Script>
+      </head>
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${rajdhani.className}`}>
         <Providers>
