@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-flex items-center gap-2">
-                  <img src="/images/logo/logo-new.png" alt="800 Speedy" className="h-10 w-auto" />
+                  <img src="/images/logo/logo-800speedy-white.png" alt="800 Speedy" className="h-10 w-auto" />
                 </Link>
                 <p className="mb-4 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   800 Speedy is your one-stop mobile tyre repair and

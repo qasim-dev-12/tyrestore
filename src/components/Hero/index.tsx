@@ -69,7 +69,7 @@ const Hero = () => {
                       <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full sm:h-10 sm:w-10 ${b.bg}`}>
                         {b.icon}
                       </span>
-                      <span className="sm:hidden text-base">{b.short}</span>
+                      <span className="sm:hidden text-[16px]">{b.short}</span>
                       <span className="hidden sm:inline">{b.text}</span>
                     </li>
                   ))}

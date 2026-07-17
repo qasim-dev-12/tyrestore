@@ -54,7 +54,7 @@ const Header = () => {
                   sticky ? "py-5 xl:py-2" : "py-8"
                 } `}
               >
-                <img src="/images/logo/logo-new.png" alt="800 Speedy" className="h-12 w-auto xl:h-20" />
+                <img src="/images/logo/logo-800speedy-white.png" alt="800 Speedy" className="h-10 w-auto xl:h-16" />
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
