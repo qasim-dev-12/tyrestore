@@ -20,7 +20,7 @@ const BrandsShowcase = () => {
               style={{ animationDelay: `${i * 100}ms` }}
               className="group flex flex-col items-center gap-4 rounded-2xl bg-dark p-6 text-center ring-1 ring-stroke-dark transition-all duration-300 hover:-translate-y-2 hover:ring-primary hover:shadow-[0_12px_40px_rgba(52,235,229,0.15)] animate-[fadeInUp_0.5s_ease_both]"
             >
-              <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-2xl bg-white">
+              <div className="flex h-40 w-full items-center justify-center overflow-hidden rounded-2xl bg-white sm:h-24 sm:w-24">
                 {brand.image ? (
                   <div className="relative h-full w-full">
                     <Image src={brand.image} alt={brand.title} fill className="object-cover" />
@@ -34,7 +34,7 @@ const BrandsShowcase = () => {
               <span className="text-lg font-bold text-white transition-colors duration-300 group-hover:text-primary">
                 {brand.title.replace(" Tyres", "").replace(" Tires", "")}
               </span>
-              <span className="text-xs text-body-color-dark">View Models →</span>
+              <span className="text-xs text-white">View Models →</span>
             </Link>
           ))}
         </div>
